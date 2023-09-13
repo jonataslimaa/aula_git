@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<script>
+			
+			var nota1 = prompt ("digite a primeira nota:");
+				nota1 = nota1.replace(",",".");
+				nota1 = parseFloat(nota1);
+				
+			var nota2 = prompt ("digite a segunda nota:");
+				nota2 = nota2.replace(",",".");
+				nota2 = parseFloat(nota2);
+				
+			var nota3 = prompt ("digite a terceira nota:");
+				nota3 = nota3.replace(",",".");
+				nota3 = parseFloat(nota3);
+
+			document.write ("<b>Nota 1: </b>" +nota1);
+			document.write ("<br>");
+			document.write ("<b>Nota 2: </b>" +nota2);
+			document.write ("<br>");
+			document.write ("<b>Nota 3: </b>" +nota3);
+			document.write ("<br>");
+			
+			var media= (nota1+nota2+nota3)/3;
+			document.write ("<br>");
+			document.write ("<br>Média: </br>"+media);
+			document.write ("<br><br>");
+			
+			if(media >= 6) {
+				document.write("Aprovado");
+				
+			
+			}else {
+				document.write("Reprovado");}
+			
+	
+		</script>
+	</body>
+</html>
